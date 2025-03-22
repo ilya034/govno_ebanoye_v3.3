@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        fetch('savelogs.php')
+            .then(response => {
+                if (!response.ok) {
+                    console.error('Ошибка при записи логов');
+                }
+            })
+            .catch(error => console.error('Ошибка:', error));
+    </script>
+
     <div class="overlay">
         <img src="img/logo.png" alt="Логотип" class="logo">
         <h1>Тестовый сайтик для иситиков</h1>
