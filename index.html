@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Расписание хуйни</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Подключаем файл стилей -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <h1>Тестовый сайтик для иситиков</h1>
-    
+    <div class="overlay">
+        <img src="img/logo.png" alt="Логотип" class="logo">
+        <h1>Тестовый сайтик для иситиков</h1>
+    </div>
+
     <a href="https://drive.google.com/drive/folders/1Lr7ZNJgXBwXnjFijXObSQT4DjDSFVDSM?usp=drive_link" target="_blank">
         <img src="img/googleimg.png" alt="Ссылка на Google Диск">
     </a>
@@ -17,7 +20,7 @@
     <div class="container">
         <div class="schedule">
             <h2>Актуальное расписание</h2>
-            <img src="img/rasp1.png" alt="Актуальное рассписание" onclick="openFullscreen(this.src)">
+            <img src="img/rasp1.png" alt="Актуальное расписание" onclick="openFullscreen(this.src)">
         </div>
         
         <div class="schedule">
@@ -26,7 +29,6 @@
         </div>
     </div>
 
-    <!-- Полноэкранное изображение -->
     <div class="fullscreen" id="fullscreen">
         <span class="close" onclick="closeFullscreen()">&times;</span>
         <img id="fullscreenImg" src="" alt="Полное расписание">
