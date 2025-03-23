@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Расписание хуйни</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Подключаем файл стилей -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'NeuropolX';
+            src: url('img/neuropolx rg.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
 <body>
     <div class="overlay">
@@ -29,7 +37,6 @@
         </div>
     </div>
 
-    <!-- Полноэкранное изображение -->
     <div class="fullscreen" id="fullscreen">
         <span class="close" onclick="closeFullscreen()">&times;</span>
         <img id="fullscreenImg" src="" alt="Полное расписание">
