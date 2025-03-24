@@ -1,18 +1,25 @@
 name: Update Rasp
-<<<<<<< HEAD
-=======
 
-on: push
+on:
+  push
+
+  schedule:
+    - cron: "0 15 * * *"
 
 jobs:
   update:
     runs-on: ubuntu-latest
     
     steps:
+      - name: run script
+        uses: actions/checkout@v4
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+        run: python update.py 
+          
       - name: git push
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "Github Actions"
-          echo "aboba"
-          
->>>>>>> 87a65f7f4a19b7d3916b2cfbe9354842cda94685
+          cat aboba.txt
