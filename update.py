@@ -1,3 +1,3 @@
-with open("aboba.txt", "r") as f:
+with open("aboba.txt", "w") as f:
     f.write("aboba" * 5)
 
