@@ -20,8 +20,13 @@ jobs:
           python-version: 3.12
       - name: run script
         run: python update.py     
+      - name: python configure
+        run: pip install -r requirements.txt
       - name: git push
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "Github Actions"
-          cat aboba.txt
+          git add full_schedule.pdf
+          git add img/schedule.png
+          git commit -m "schedule update"
+          git push 
