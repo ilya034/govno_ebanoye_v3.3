@@ -1,6 +1,10 @@
 certifi==2025.1.31
+cffi==1.17.1
 charset-normalizer==3.4.1
+curl_cffi==0.10.0
 idna==3.10
+pycparser==2.22
 PyMuPDF==1.25.4
 requests==2.32.3
+stealth-requests==1.2.1
 urllib3==2.3.0
